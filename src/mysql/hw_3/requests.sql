@@ -44,4 +44,4 @@ SELECT `publish_date`, `body` FROM `publishes` LIMIT 5;
 
 -- 12. Необходимо подсчитать сколько школ зарегистрированы в каждом регионе из таблицы `schools`. Результат должен содержать количество школ и идентификатор региона `region_id`.
 
-SELECT `region_id`, COUNT(`region_id`) FROM `schools` GROUP BY `region_id`;
+SELECT COUNT(`name`), `region_id` FROM `schools` GROUP BY `region_id`;
